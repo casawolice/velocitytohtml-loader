@@ -1,0 +1,4 @@
+#if($!flag=="1")
+test success
+#parse("./c.vm")
+#end
