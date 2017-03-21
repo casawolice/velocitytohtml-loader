@@ -1,0 +1,27 @@
+{
+  "name": "velocitytohtml-loader",
+  "version": "0.1",
+  "description": "A node velocity template loader",
+  "homepage": "https://github.com/casawolice/velocitytohtml-loader",
+  "keywords": [
+    "node",
+    "velocity",
+    "template",
+    "loader"
+  ],
+  "author": "casawolice <casawolice@qq.com>",
+  "scripts": {},
+  "dependencies": {
+    "velocityjs": "^0.9.4",
+    "loader-utils": "^1.1.0"
+  },
+  "devDependencies": {
+    "loader-utils": "^1.1.0",
+    "velocityjs": "^0.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:casawolice/velocitytohtml-loader.git"
+  },
+  "license": "MIT"
+}
