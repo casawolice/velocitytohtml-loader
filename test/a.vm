@@ -1,0 +1,7 @@
+#if($!flag=="1")
+#parse("./b.vm")
+<div>----</div>
+#else
+<span>xxxx</span>
+
+#end
