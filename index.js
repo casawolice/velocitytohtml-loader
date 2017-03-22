@@ -9,7 +9,7 @@ let fs = require("fs"),
 if (fs.existsSync(configPath)) {
     context = require(configPath);
 } else {
-    throw "velocityConfig.json hasn't been found ,please check it ";
+    throw "velocity.config.js hasn't been found ,please check it ";
     return ""
 }
 
@@ -41,7 +41,7 @@ module.exports = function(content) {
     orginPath = file;
 
     if (context === undefined) {
-        throw "velocityConfig.json hasn't been found ,please check it ";
+        throw "velocity.config.js hasn't been found ,please check it ";
         return ""
     }
 
