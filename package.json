@@ -1,6 +1,6 @@
 {
   "name": "velocitytohtml-loader",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A node velocity template loader",
   "homepage": "https://github.com/casawolice/velocitytohtml-loader",
   "keywords": [
