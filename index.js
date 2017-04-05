@@ -19,10 +19,23 @@ let macros = {
 
     },
     include: function(filePath) {
+        var rFilePath = path.relative(path.dirname(orginPath), filePath);
         filePath = path.join(path.dirname(orginPath), filePath);
         if (!filePath || typeof filePath !== "string") return ""
         if (fs.existsSync(filePath)) {
-            return fs.readFileSync(filePath, "utf8")
+            var rs = fs.readFileSync(filePath, "utf8");
+           return rs.replace(/(#parse\s*\(\s*|#include\s*\(\s*|\s+src=|\s+href=)('([\.]{1,2}\/.*)'|"([\.]{1,2}\/.*)")/ig ,function(...args){
+               
+               
+              var rPath= path.relative(path.dirname(rFilePath),args[3] || args[4]) ;
+
+              if(args[3])return args[0].replace(args[3],rPath);
+              return args[0].replace(args[4],rPath);
+
+
+            })
+
+
 
         }
         return ""
